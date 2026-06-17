@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "azurite",
+  "key": {
+    "A": "teftercarft:terit",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "AA",
+    "S ",
+    "S "
+  ],
+  "result": {
+    "id": "teftercarft:terit_hoe"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemGroup.teftercarft": "Example Mod Tab",
+  "block.teftercarft.example_block": "Example Block",
+  "item.teftercarft.example_item": "Example Item",
+
+  "teftercarft.configuration.title": "TefterCarft Configs",
+  "teftercarft.configuration.section.teftercarft.common.toml": "TefterCarft Configs",
+  "teftercarft.configuration.section.teftercarft.common.toml.title": "TefterCarft Configs",
+  "teftercarft.configuration.items": "Item List",
+  "teftercarft.configuration.logDirtBlock": "Log Dirt Block",
+  "teftercarft.configuration.magicNumberIntroduction": "Magic Number Text",
+  "teftercarft.configuration.magicNumber": "Magic Number"
+}
