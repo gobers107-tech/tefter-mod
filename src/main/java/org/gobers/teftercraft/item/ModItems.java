@@ -21,6 +21,7 @@ public class ModItems {
     public static final DeferredItem<Item> TEFTBRF = ModItems.ITEMS.registerItem("TEFTBRF".toLowerCase(), TeftnrfItem::new);
     public static final DeferredItem<Item> TERIT = ModItems.ITEMS.registerItem("terit", (properties) -> new Item(properties));
 
+
     public static final DeferredItem<Item> TERIT_SWORD = ITEMS.registerItem("terit_sword",
             properties -> new Item(properties.sword(ModToolRirs.TERIT, 3, -2.4f)));
     public static final DeferredItem<Item> TERIT_PICKAXE = ITEMS.registerItem("terit_pickaxe",

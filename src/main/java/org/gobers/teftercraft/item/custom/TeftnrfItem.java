@@ -18,6 +18,7 @@ public class TeftnrfItem extends Item {
 
         var block = FallingBlockEntity.fall(context.getLevel(),context.getClickedPos(),context.getLevel().getBlockState(context.getClickedPos()));
 
+
         block.addDeltaMovement(new Vec3(forvord.x,1,forvord.z));
         context.getItemInHand().hurtAndBreak(1,context.getPlayer(),context.getHand());
         return InteractionResult.SUCCESS;

@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                     output.accept(new ItemStack(ModItems.TERIT_HOE.get()));
                     output.accept(new ItemStack(ModItems.TERIT_AXE.get()));
                     output.accept(new ItemStack(ModItems.TEFTBRF.get()));
+                    
 //                                     BLOCKS
                     output.accept(new ItemStack(ModBlocks.AN_CRAFT_BLOCK));
                     output.accept(new ItemStack(ModBlocks.TEST2_BLOCK));

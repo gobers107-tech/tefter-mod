@@ -20,6 +20,7 @@ public class ModModelProvider extends ModelProvider  {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
+
         itemModels.generateFlatItem(ModItems.TEST_ITEM.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.DIRON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PORTAL.get(), ModelTemplates.FLAT_ITEM);
