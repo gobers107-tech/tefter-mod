@@ -27,6 +27,7 @@ public class ModModelProvider extends ModelProvider  {
         itemModels.generateFlatItem(ModItems.BLOCK_TO_TNT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.FAll_Block.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.TERIT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TEFTBRF.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.TERIT_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.TERIT_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

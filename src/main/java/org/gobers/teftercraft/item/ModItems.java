@@ -7,10 +7,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.gobers.teftercraft.TefterCarft;
-import org.gobers.teftercraft.item.custom.BlockToTntItem;
-import org.gobers.teftercraft.item.custom.DironItem;
-import org.gobers.teftercraft.item.custom.FallBlockItem;
-import org.gobers.teftercraft.item.custom.KaboomItem;
+import org.gobers.teftercraft.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TefterCarft.MODID);
@@ -21,6 +18,7 @@ public class ModItems {
     public static final DeferredItem<Item> KABOOM = ModItems.ITEMS.registerItem("kaboom", KaboomItem::new);
     public static final DeferredItem<Item> BLOCK_TO_TNT = ModItems.ITEMS.registerItem("block_to_tnt", BlockToTntItem::new);
     public static final DeferredItem<Item> FAll_Block = ModItems.ITEMS.registerItem("fall_block", FallBlockItem::new);
+    public static final DeferredItem<Item> TEFTBRF = ModItems.ITEMS.registerItem("TEFTBRF".toLowerCase(), TeftnrfItem::new);
     public static final DeferredItem<Item> TERIT = ModItems.ITEMS.registerItem("terit", (properties) -> new Item(properties));
 
     public static final DeferredItem<Item> TERIT_SWORD = ITEMS.registerItem("terit_sword",
