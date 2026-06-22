@@ -1,6 +1,7 @@
 package org.gobers.teftercraft;
 
 import org.gobers.teftercraft.block.ModBlocks;
+import org.gobers.teftercraft.data.ModDataComponents;
 import org.gobers.teftercraft.events.BlocksEvents;
 import org.gobers.teftercraft.item.ModItems;
 import org.slf4j.Logger;
@@ -50,6 +51,7 @@ public class TefterCarft {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
 //        modEventBus.addListener(this::addCreative);
 

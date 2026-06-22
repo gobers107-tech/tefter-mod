@@ -1,6 +1,5 @@
 package org.gobers.teftercraft.item;
 
-
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +19,7 @@ public class ModItems {
     public static final DeferredItem<Item> FAll_Block = ModItems.ITEMS.registerItem("fall_block", FallBlockItem::new);
     public static final DeferredItem<Item> TEFTBRF = ModItems.ITEMS.registerItem("TEFTBRF".toLowerCase(), TeftnrfItem::new);
     public static final DeferredItem<Item> TERIT = ModItems.ITEMS.registerItem("terit", (properties) -> new Item(properties));
+    public static final DeferredItem<Item> DATA_TABLET = ModItems.ITEMS.registerItem("DATA_TABLET".toLowerCase(), (properties) -> new Item(properties.stacksTo(1)));
 
 
     public static final DeferredItem<Item> TERIT_SWORD = ITEMS.registerItem("terit_sword",
@@ -35,6 +35,7 @@ public class ModItems {
     public static final DeferredItem<Item> TERIT_SPEAR = ITEMS.registerItem("terit_spear",
             properties -> new Item(properties.spear(ModToolRirs.TERIT, 0.95f, 0.7f, 0.7f,
                     3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
