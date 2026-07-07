@@ -8,6 +8,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import org.gobers.teftercraft.datagen.ModItemTagsProvider;
 import org.gobers.teftercraft.datagen.ModModelProvider;
 import org.gobers.teftercraft.datagen.ModRecipeProvider;
+import org.gobers.teftercraft.datagen.ModWorldGenProvider;
 
 @EventBusSubscriber(modid = TefterCarft.MODID)
 public class TefterCraftDataGen {
@@ -22,5 +23,7 @@ public class TefterCraftDataGen {
 
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
         generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
+
+        generator.addProvider(true, new ModWorldGenProvider(packOutput, lookupProvider));
     }
 }

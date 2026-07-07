@@ -19,22 +19,23 @@ public class ModItems {
     public static final DeferredItem<Item> FAll_Block = ModItems.ITEMS.registerItem("fall_block", FallBlockItem::new);
     public static final DeferredItem<Item> TEFTBRF = ModItems.ITEMS.registerItem("TEFTBRF".toLowerCase(), TeftnrfItem::new);
     public static final DeferredItem<Item> TERIT = ModItems.ITEMS.registerItem("terit", (properties) -> new Item(properties));
-    public static final DeferredItem<Item> DATA_TABLET = ModItems.ITEMS.registerItem("DATA_TABLET".toLowerCase(), (properties) -> new Item(properties.stacksTo(1)));
+    public static final DeferredItem<Item> DATA_TABLET = ModItems.ITEMS.registerItem("DATA_TABLET".toLowerCase(), (properties) -> new DataTabletItem(properties.stacksTo(1)));
+    public static final DeferredItem<Item> FOIRF = ModItems.ITEMS.registerItem("FOIRF".toLowerCase(), FolrfItem::new);
 
 
     public static final DeferredItem<Item> TERIT_SWORD = ITEMS.registerItem("terit_sword",
-            properties -> new Item(properties.sword(ModToolRirs.TERIT, 3, -2.4f)));
+            properties -> new Item(properties.sword(ModToolRirs.TERIT, 3, 5f)));
     public static final DeferredItem<Item> TERIT_PICKAXE = ITEMS.registerItem("terit_pickaxe",
-            properties -> new Item(properties.pickaxe(ModToolRirs.TERIT, 1, -2.8f)));
+            properties -> new Item(properties.pickaxe(ModToolRirs.TERIT, 1, 5f)));
     public static final DeferredItem<Item> TERIT_SHOVEL = ITEMS.registerItem("terit_shovel",
-            properties -> new ShovelItem(ModToolRirs.TERIT, 1.5f, -3.0f, properties));
+            properties -> new ShovelItem(ModToolRirs.TERIT, 1.5f, 5.0f, properties));
     public static final DeferredItem<Item> TERIT_AXE = ITEMS.registerItem("terit_axe",
-            properties -> new AxeItem(ModToolRirs.TERIT, 6, -3.2f, properties));
+            properties -> new AxeItem(ModToolRirs.TERIT, 6, 5.2f, properties));
     public static final DeferredItem<Item> TERIT_HOE = ITEMS.registerItem("terit_hoe",
-            properties -> new HoeItem(ModToolRirs.TERIT, 0, -3.0f, properties));
+            properties -> new HoeItem(ModToolRirs.TERIT, 0, 5.0f, properties));
     public static final DeferredItem<Item> TERIT_SPEAR = ITEMS.registerItem("terit_spear",
-            properties -> new Item(properties.spear(ModToolRirs.TERIT, 0.95f, 0.7f, 0.7f,
-                    3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)));
+            properties -> new Item(properties.spear(ModToolRirs.TERIT, 0.95f, 3f, 0.2f,
+                    10f, 13f, 12f, 5.1f, 13.5f, 0.1f)));
 
 
     public static void register(IEventBus eventBus) {

@@ -11,6 +11,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.util.Util;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.util.Objects;
 import java.util.stream.IntStream;
 
 public class PosAndState {
@@ -34,12 +35,26 @@ public class PosAndState {
         return pos;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof PosAndState other)) return false;
+
+        return Objects.equals(blockState, other.blockState)
+                && Objects.equals(pos, other.pos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(blockState, pos);
+    }
+
 
     static {
          CODEC = RecordCodecBuilder.create(instance ->
                 instance.group(
-                        BlockState.CODEC.fieldOf("name").forGetter(PosAndState::getBlockState),
-                        BlockPos.CODEC.fieldOf("value").forGetter(PosAndState::getPos)
+                        BlockState.CODEC.fieldOf("state").forGetter(PosAndState::getBlockState),
+                        BlockPos.CODEC.fieldOf("pos").forGetter(PosAndState::getPos)
                 ).apply(instance, PosAndState::new)
         );
 

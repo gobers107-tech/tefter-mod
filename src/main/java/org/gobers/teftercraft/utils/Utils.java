@@ -1,6 +1,8 @@
 package org.gobers.teftercraft.utils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -34,5 +36,12 @@ public class Utils {
 
         if (blocks.isEmpty()) fillBlocks();
         return BufferMod.randItemToTransform.get(rand.nextInt(BufferMod.randItemToTransform.size()));
+    }
+
+    public static ResourceKey<Item> getRID(Item item){
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+    public static ResourceKey<Block> getRID(Block item){
+        return BuiltInRegistries.BLOCK.getResourceKey(item).get();
     }
 }

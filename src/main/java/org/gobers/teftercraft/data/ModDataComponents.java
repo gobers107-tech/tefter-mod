@@ -16,7 +16,7 @@ public class ModDataComponents {
             DeferredRegister.createDataComponents(Registries.DATA_COMPONENT_TYPE, TefterCarft.MODID);
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<PosAndState>> POS_AND_STATE = register("pos_and_state",
-            builder -> builder.persistent(PosAndState.CODEC));
+            builder -> builder.persistent(PosAndState.CODEC).networkSynchronized(PosAndState.STREAM_CODEC));
 
     private static <T>DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
                                                                                           UnaryOperator<DataComponentType.Builder<T>> builderOperator) {
